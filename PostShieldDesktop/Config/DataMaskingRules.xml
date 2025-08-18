@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <!-- 手机规则 -->
+
+  <!-- 身份证规则 -->
+
+  <!-- 邮箱规则 -->
+
+  <!-- 姓名规则 -->
+
+<DataMaskingRules>
+    <Rule>
+        <Type>PhoneNumber</Type>
+        <Pattern>^1[3-9]\d{9}$</Pattern>
+        <Mask>###****####</Mask>
+        <Description>隐藏中间四位</Description>
+    </Rule>
+    <Rule>
+        <Type>IDNumber</Type>
+        <Pattern>^\d{6}(18|19|20)?\d{2}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])\d{3}(\d|X)$</Pattern>
+        <Mask>######********####</Mask>
+        <Description>隐藏中间八位</Description>
+    </Rule>
+    <Rule>
+        <Type>Email</Type>
+        <Pattern>^[\w\.-]+@[\w\.-]+\.[a-zA-Z]{2,}$</Pattern>
+        <Mask>#***#@</Mask>
+        <Description>隐藏用户名中间部分</Description>
+    </Rule>
+    <Rule>
+        <Type>Name</Type>
+        <Pattern>^[\u4e00-\u9fa5]{2,4}$</Pattern>
+        <Mask>#***</Mask>
+        <Description>保留姓氏，隐藏其他字符</Description>
+    </Rule>
+</DataMaskingRules>
