@@ -1,11 +1,6 @@
 
 # PostShield Desktop
 
-A clean, production-oriented **.NET/Avalonia** desktop app scaffold.  
-This repository contains a cross-platform GUI (Windows/macOS/Linux) with XAML views and C# code-behind, ready for local development and packaging.
-
-# PostShield Desktop
-
 **PostShield** is a cross-platform .NET/Avalonia desktop app for **automatic redaction** of contact information.  
 Drag one or more folders into the app, click **Encrypt**, and PostShield batch-processes every file using rule-based blurring/masking (e.g., blur phone numbers except the last four digits, mask first names). A built-in search lets you quickly locate a specific file before or after processing.
 
