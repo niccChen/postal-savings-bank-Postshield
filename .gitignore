@@ -1,0 +1,9 @@
+**/bin/
+**/obj/
+.DS_Store
+.idea/
+.vs/
+.preview/
+outputs/
+*.user
+*.suo
