@@ -54,13 +54,13 @@ The example above was read back from a workbook processed by the application. Th
 
 ```mermaid
 flowchart LR
-    A[Choose a folder] --> B[Scan .xlsx files]
-    B --> C[Filter by filename]
-    C --> D[Create temporary backups]
-    D --> E[Apply XML masking rules]
-    E --> F[Save workbook changes]
-    D -. available for undo .-> G[Restore originals]
-    H[DataMaskingRules.xml] --> E
+    A["Find workbooks<br/>Scan folders · filter filenames"] --> B["Back up originals"]
+    B --> C["Apply masking rules<br/>Process matching text cells"]
+    C --> D["Save workbook changes"]
+    E["XML configuration"] --> C
+    B -. available for undo .-> F["Restore originals"]
+    classDef stage fill:#edf6ef,stroke:#9dbdaa,color:#214b3e;
+    class A,B,C,D,E,F stage;
 ```
 
 | Decision | Purpose | Current boundary |
